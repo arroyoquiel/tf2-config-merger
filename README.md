@@ -11,8 +11,9 @@ To use this tool, you need the following:
 - The config folders and the script in the same directory
 
 ## Usage
+> ⚠️ FOLLOW THESE STEPS **CAREFULLY** OR YOU CAN END UP **COPYING EVERY FILE** THAT IS IN THE SAME FOLDER AS THE SCRIPT, AND **WASTING DISK SPACE** ⚠️
 1. Make a new folder only including your config folders.
-2. Download the script and add it next to the config folders.
+2. [Download the script](https://raw.githubusercontent.com/arroyoquiel/tf2-config-merger/main/tf2_config_merger.sh) and add it next to the config folders.
 3. Run the script. To do this, open the script with Git Bash.
 
 The script will create a new directory called `merged` in the current directory and store the merged or copied files there.
