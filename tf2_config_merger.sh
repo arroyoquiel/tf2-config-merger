@@ -6,13 +6,26 @@
 # Find all directories in the current directory
 directories=$(find . -maxdepth 1 -type d)
 
+# Print the name of the script
+echo "TF2 Config Merger v1.1"
+
+# Print a list of all directories in the current directory
+echo "List of directories in the current directory:"
+printf '%s\n' "$directories"
+
+# Prompt the user to enter a name for the merged folder
+read -p "Enter a name for the merged folder: " merged_folder
+
 # Create a new directory to store the merged files
-mkdir -p merged
+mkdir -p "$merged_folder"
+
+# Print a message indicating that the merging process is starting.
+echo "Merging, please wait..."
 
 # Loop through all directories
 while IFS= read -r dir; do
 	# Skip the current directory and the merged directory
-	if [[ $dir == "." || $dir == "./merged" ]]; then
+	if [[ $dir == "." || $dir == "./$merged_folder" ]]; then
 		continue
 	fi
 
@@ -27,9 +40,9 @@ while IFS= read -r dir; do
 
 		# Create a new file in the merged directory with the same relative path and name
 		if [[ -z $relpath ]]; then
-			newfile="./merged/$filename"
+			newfile="./$merged_folder/$filename"
 		else
-			newfile="./merged/$relpath/$filename"
+			newfile="./$merged_folder/$relpath/$filename"
 		fi
 
 		# Ensure that the new file path does not contain any double slashes or end with a slash
