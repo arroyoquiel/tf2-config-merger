@@ -11,10 +11,15 @@ To use this tool, you need the following:
 - The config folders and the script in the same directory
 
 ## Usage
-To run the script, open the script with Git Bash.
+1. Make a new folder only including your config folders.
+2. Download the script and add it next to the config folders.
+3. Run the script. To do this, open the script with Git Bash.
 
-The script will create a new directory called `merged` in the current directory and store the merged or copied files there. The script will also print a message indicating that the merging process is done.
+The script will create a new directory called `merged` in the current directory and store the merged or copied files there.
 
+You can rename your `merged` folder after the script has finished, and if you want, you can drag the folder to `Team Fortress 2/bin/vpk` to make a .vpk of your brand new config, for easier shareability.
+
+To use your `merged` config folder, copy or move it to `Team Fortress 2/tf/custom`.
 ## Example
 Suppose you have the following directory structure:
 
