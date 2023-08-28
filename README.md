@@ -19,9 +19,9 @@ To use this tool, you need the following:
 5. Set a custom name for your merged folder
 6. Wait for the merge to finish
 
-The script will create a new directory called `merged` in the current directory and store the merged or copied files there.
+The script will create a new merged directory with the name you chose in the current directory, and store the merged or copied files there.
 
-You can chose any name for your merged folder, and if you want, you can drag the folder to `Team Fortress 2/bin/vpk` to make a .vpk of your brand new config, for easier shareability.
+> Optional: You can drag the folder to `Team Fortress 2/bin/vpk.exe` to make a .vpk of your brand new config, for easier shareability.
 
 To use your merged config folder, copy or move it to `Team Fortress 2/tf/custom`.
 ## Example
