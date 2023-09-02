@@ -1,7 +1,13 @@
-# TF2 Config Merger
+# TF2 Config Merger: A Script to Combine Multiple Config Files
 ![mintty_PvSP09MsTF](https://github.com/arroyoquiel/tf2-config-merger/assets/81461845/4f887a15-0c2e-4f4d-b48f-24d307148aad)
 
-TF2 Config Merger is a bash script that merges different Team Fortress 2 config files into one. It works with any custom config folder and avoids compatibility issues from files sharing the same name (for example, using mastercomfig and your custom class configs, the game will prioritize whichever file it loaded first and ignore the others). It merges .cfg and .txt files by appending their contents with headers indicating their original file names and folders. For other file types, such as audio files, it will copy the file to the merged folder and rename it with a number suffix if there are multiple files with the same name. You can keep the file you want by choosing the appropriate number.
+TF2 Config Merger is a bash script that combines multiple TF2 config folders into a single one. It supports any custom config folder and prevents conflicts from files with the same name.
+
+The tool adds headers to .cfg and .txt files that indicate their original names and folders. It also copies other file types and adds a number suffix if there are duplicate file names.
+
+The tool allows you to use both .cfg and .txt files that have the same name in different config folders. This solves the problem of the Source engine not loading two .cfg files with the same name. For example, if you have `cfg/scout.cfg` in two different `tf/custom` folders, only one of them will be loaded by the game.
+
+If you want to use your own class/mercenary .cfg files and also the ones from a pro-player, you might face a problem where only one set of files will be loaded. By using this tool, you can merge and use both sets of files without any issues.
 
 # Requirements (Windows 11)
 > (Only tested in Windows 11)
